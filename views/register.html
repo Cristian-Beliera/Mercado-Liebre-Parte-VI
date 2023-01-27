@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            rel="stylesheet"/>
+</head>
+<body class="register">
+    <div class="form-container">
+        <h2>Registro</h2>
+        <hr>
+        <form action="/crear-usuario" method="POST" class="create-user">
+            <div class="form">
+            <div class="input-container">
+                <label>Nombre y apellido</label>
+                <input class="input-style" type="name" name="name" placeholder="Ingrese su nombre y apellido">
+                <span class="error-message">Debe ingresar su nombre y apellido</span>
+            </div>
+            <div class="input-container">
+                <label>Nombre de usuario</label>
+                <input class="input-style" type="text" name="nameUser" placeholder="Ingrese su nombre de usuari@">
+                <span class="error-message">Debe ingresar su usuari@</span>
+            </div>
+            <div class="input-container">
+                <label>E-mail</label>
+                <input class="input-style" type="text" name="nameUser" placeholder="Ingrese su nombre de usuari@">
+                <span class="error-message">Debe ingresar su e-mail</span>
+            </div>
+            <div class="input-container">
+                <label>Fecha de nacimiento</label>
+                <input class="input-style" type="date" name="dateOfBirth" placeholder="Ingrese su nombre de usuari@">
+                <span class="error-message">Debe ingresar su fecha de nacimiento</span>
+            </div>
+            <div class="input-container">
+                <label>Domicilio (calle, altura, piso, Dpto.)</label>
+                <input class="input-style" type="text" name="domicilio" placeholder="Ingrese su contraseña">
+                <span class="error-message">Debe ingresar su domicilio</span>
+            </div>
+            <div class="input-container">
+                <label>Perfil de ususario</label>
+                <input class="input-style" type="radio" name="comprador" placeholder="Comprador">
+                <span class="text">Comprador</span>
+                <input class="input-style" type="radio" name="vendedor" placeholder="Vendedor">
+                <span class="text">Vendedor</span>
+            </div>
+            <div class="input-container">
+                <label>Categorías de interés</label>
+                <label>
+                <input class="input-style" type="checkbox" value="Electro">Electro
+                </label>
+                <label>
+                <input class="input-style" type="checkbox" value="Moda">Moda
+                </label>
+                <label>
+                <input class="input-style" type="checkbox" value="Hogar">Hogar
+                </label>
+                <label>
+                <input class="input-style" type="checkbox" value="Juguetería">Juguetería
+                </label>
+                <label>
+                <input class="input-style" type="checkbox" value="Vida sana">Vida sana
+                </label>    
+            </div>
+            <div class="input-container">
+                <label>Foto de perfil</label>
+                <input type="file" name="fotoPerfil" accept=".jpg, .png">
+            </div>
+            <div class="input-container">
+                <label>Contraseña</label>
+                <input class="input-style" type="password" name="pass" placeholder="Ingrese su domicilio">
+                <span class="error-message">Debe ingresar su contraseña</span>
+            </div>
+            <div class="input-container">
+                <label>Re-ingrese contraseña</label>
+                <input class="input-style" type="password" name="pass2" placeholder="Re-ingrese su contraseña">
+                <span class="error-message">Debe re-ingresar su contraseña</span>
+            </div>
+            <span class="error-message">Credenciales inválidas</span>
+            <div class="button-container">        
+                <button type="submit" class="btn btn-submit">Registrarme</button>
+            </div>
+            <div class="button-container">        
+                <button type="reset" class="btn btn-submit">Borrar</button>
+        </form>
+    </div>
+</body>
+</html>
