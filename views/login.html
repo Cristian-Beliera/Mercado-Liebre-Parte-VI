@@ -11,25 +11,20 @@
         rel="stylesheet"/>
 </head>
 <body>
-    <div class="form-container">
-        <h2>Ingresar</h2>
-        <hr>
-        <form action="" method="POST">
-            <div class="form">
-                <div class="input-container">
-                    <input class="input-style" type="text" name="nameUser" placeholder="Ingrese su usuari@">
-                    <span class="error-message">Debe ingresar su usuario</span>
-                </div>
-                <div class="input-container">
-                    <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
-                    <span class="error-message">Debe ingresar su contraseña</span>
-                </div>
-                <div class="button-container">
-                    <span class="error-message">Credenciales inválidas</span>
-                    <button type="submit" class="btn btn-submit">Ingresar</button>
-                </div>
-            </div>
+    <main class="login">
+        <form action="home" method="post" class="register-form">
+              <div class="control-form">
+                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" class="control" required minlength="6" maxlength="8">
+              </div>
+              <div class="control-form">
+                    <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña" class="control" required minlength="6" maxlength="8">
+              </div>
+              <div class="send-btn">
+                    <button type="submit" ><a href="/">Iniciar Sesión</a></button>
+              </div>
         </form>
-    </div>
+
+  </main>
+
 </body>
 </html>
